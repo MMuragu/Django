@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In - JipangeEvents</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Eventms/css/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    {% include 'Eventms/back.html' %}
+    <div class="login-container">
+        <h2>Log In to Your Account</h2>
+
+        <!-- Display messages (e.g., success or error) -->
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    
+        <form action="{% url 'custom_login' %}" method="POST" class="login-form">
+            {% csrf_token %}
+            
+            <!-- Username/Email -->
+            <div class="form-group">
+                <!--<label for="username_or_email">Username/Email</label><br><<br>-->
+                <input type="text" id="username_or_email" name="username_or_email" placeholder="Username or Email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+    </div>
+
+</body>
+</html>

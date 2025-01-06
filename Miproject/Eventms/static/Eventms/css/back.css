@@ -1,0 +1,27 @@
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.back-icon:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #00ff88;
+}
+
+.back-icon i {
+    font-size: 20px;
+}
+
+.back-icon span {
+    font-weight: 500;
+}

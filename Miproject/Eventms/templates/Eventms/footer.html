@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <!-- Link to CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'Eventms/css/footer.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        
+        <!-- Allow for additional styles or meta tags to be inserted in child templates -->
+        {% block extra_head %}{% endblock %}
+    </head>
+    <body>
+       
+
+        <!-- Content placeholder for child templates -->
+        {% block content %}{% endblock %}
+        
+        <!-- Footer (if needed for header) -->
+        {% block footer %}
+        <footer>
+            <p>&copy; 2024 JipangeEvents. All Rights Reserved.</p>
+        </footer>
+        {% endblock %}
+    </body>
+</html>

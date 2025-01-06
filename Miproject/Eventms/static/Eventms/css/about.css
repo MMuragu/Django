@@ -1,0 +1,54 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #00ff88;
+}
+
+/* About section styles */
+.about-section {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #00ff88;
+}
+
+.about-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+.mission h3, .vision h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+

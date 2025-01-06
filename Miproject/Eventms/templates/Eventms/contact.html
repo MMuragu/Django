@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Us - JipangeEvents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'Eventms/css/contact.css' %}">
+</head>
+<body>
+    {% include 'Eventms/back.html' %}
+    <div class="contact-wrapper">
+        <!-- Interactive Cards Section -->
+        <section class="contact-options">
+            <h1>Let's Create Something Amazing Together!</h1>
+            
+            <div class="cards-container">
+                <div class="contact-card email">
+                    <div class="card-content">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Drop Us a Line</h3>
+                        <p>info@jipangeevents.com</p>
+                        <span class="hover-text">Click to Email</span>
+                    </div>
+                </div>
+
+                <div class="contact-card whatsapp">
+                    <div class="card-content">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp Us</h3>
+                        <p>+254 700 000000</p>
+                        <span class="hover-text">Chat Now</span>
+                    </div>
+                </div>
+
+                <div class="contact-card location">
+                    <div class="card-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Visit Our Office</h3>
+                        <p>Westlands, Nairobi</p>
+                        <span class="hover-text">Get Directions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Hub -->
+        <section class="social-hub">
+            <h2>Connect With Us</h2>
+            <div class="social-grid">
+                <a href="#" class="social-tile instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Follow our Events</span>
+                </a>
+                <a href="#" class="social-tile facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Join our Community</span>
+                </a>
+                <a href="#" class="social-tile twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Latest Updates</span>
+                </a>
+                <a href="#" class="social-tile linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>Professional Network</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Quick Contact Buttons -->
+        <div class="quick-actions">
+            <a href="#" class="action-button organizer">
+                <i class="fas fa-calendar-alt"></i>
+                I'm an Event Organizer
+            </a>
+            <a href="#" class="action-button attendee">
+                <i class="fas fa-ticket-alt"></i>
+                I'm an Event Attendee
+            </a>
+        </div>
+    </div>
+    {% include 'Eventms/footer.html' %}
+</body>
+</html>

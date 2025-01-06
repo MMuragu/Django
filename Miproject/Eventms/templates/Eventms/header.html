@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}JipangeEvents{% endblock %}</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Eventms/css/header.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">JipangeEvents</div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle">☰</button>
+
+        <!-- Navigation Links -->
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'custom_login' %}">Log in</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content placeholder for child templates -->
+    {% block content %}{% endblock %}
+
+    <!-- Link to JavaScript -->
+    <script src="{% static 'Eventms/js/header.js' %}"></script>
+</body>
+</html>
